@@ -1,0 +1,111 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:metal="http://xml.zope.org/namespaces/metal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    lang="en"
+    metal:use-macro="context/prefs_main_template/macros/master"
+    i18n:domain="sc.base.newslettercreator">
+
+<body>
+
+<div metal:fill-slot="prefs_configlet_main">
+
+    <h1 class="documentFirstHeading"
+        i18n:translate="heading_newslettercreator_settings">Newsletter Creator settings</h1>
+
+    <a href=""
+        class="link-parent"
+        tal:attributes="href string:${portal_url}/plone_control_panel"
+        i18n:translate="label_up_to_plone_setup">
+            Up to Site Setup
+    </a>
+
+    <p i18n:translate="description_newslettercreator_settings">
+        Use this control panel to configure a template for generate the newsletter HTML
+        by upload a zip file containing the static HTML and images.
+    </p>
+
+    <dl class="enableFormTabbing">
+        <dt id="fieldsetlegend-import">Import files</dt>
+        <dd id="fieldset-import">
+
+            <p i18n:translate="description_import">
+               Use the form below to upload a Zip file containing a newsletter theme.
+            </p>
+
+            <form
+                name="import"
+                method="post"
+                enctype="multipart/form-data"
+                class="enableUnloadProtection"
+                tal:attributes="action request/URL"
+                tal:define="errors view/errors">
+
+                <div
+                    class="field"
+                    tal:define="error errors/newslettercreatorArchive | nothing"
+                    tal:attributes="class python:'field error' if error else 'field'">
+
+                    <label for="themeArchive" i18n:translate="label_newslettercreator_archive">Theme Newsletter archive</label>
+
+                    <div class="formHelp" i18n:translate="help_newslettercreator_archive">
+                        Select a file to upload. This must be a Zip file with
+                        a single top level directory, which will be used as
+                        the newsletter theme identifier. This directory must contain a
+                        <code>manifest.cfg</code>.
+                    </div>
+
+                    <div tal:content="error" tal:condition="error" />
+
+                    <input
+                        type="file"
+                        name="newslettercreatorArchive"
+                        id="newslettercreatorArchive"
+                        />
+
+                </div>
+
+                <div class="field"
+                     tal:define="selected python:request.get('replaceExisting', False)">
+                    <input type="hidden" value="" name="replaceExisting:boolean:default" />
+                    <input type="checkbox"
+                           checked=""
+                           name="replaceExisting:boolean"
+                           id="replaceExisting"
+                           tal:attributes="checked python:'replaceExisting' if selected else None"
+                           />
+                    <label for="replaceExisting" i18n:translate="label_replace_existing">Replace existing theme</label>
+                    <div class="formHelp" i18n:translate="help_replace_existing">
+                        Select this option to replace any existing theme that
+                        may have been uploaded previously.
+                    </div>
+                </div>
+
+                <div class="formControls">
+                    <input
+                        type="submit"
+                        name="form.button.Import"
+                        class="context"
+                        value="Import"
+                        i18n:attributes="value" />
+
+                    <input
+                        type="submit"
+                        name="form.button.Cancel"
+                        class="context"
+                        value="Cancel"
+                        i18n:attributes="value" />
+                </div>
+
+                <input tal:replace="structure context/@@authenticator/authenticator" />
+
+            </form>
+
+        </dd>
+
+    </dl>
+
+</div>
+
+</body>
+</html>

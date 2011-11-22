@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<import-steps>
+ <import-step id="sc.newsletter.creator-upgrades" version="20111122-09"
+              handler="sc.newsletter.creator.setuphandlers.doUpgrades"
+              title="Do upgrades">
+  <dependency step="plone_content" />
+  Do upgrades
+ </import-step>
+</import-steps>

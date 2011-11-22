@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<object
+    name="portal_controlpanel"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="sc.newsletter.creator"
+    purge="False">
+
+    <configlet
+        title="Newsletter Creator Settings"
+        action_id="sc.newsletter.creator"
+        appId="sc.newsletter.creator"
+        category="Products"
+        condition_expr=""
+        url_expr="string:${portal_url}/@@newslettercreator-controlpanel"
+        icon_expr="string:${portal_url}/maintenance_icon.png"
+        visible="True"
+        i18n:attributes="title">
+            <permission>Manage portal</permission>
+    </configlet>
+
+</object>
