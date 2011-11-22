@@ -7,12 +7,16 @@
     i18n_domain="sc.newsletter.creator">
 
   <five:registerPackage package="." initialize=".initialize" />
+  <includeDependencies package="." />
+
+  <include package="Products.CMFCore" file="permissions.zcml"
+           xmlns:zcml="http://namespaces.zope.org/zcml"
+           zcml:condition="have plone-41" />
 
   <include package="plone.resource" file="meta.zcml" />
 
   <include package="plone.resource" />
 
-  <includeDependencies package="." />
   <include package="five.grok" />
   <grok:grok package="." />
 

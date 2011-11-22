@@ -23,9 +23,9 @@ logger = logging.getLogger('sc.newsletter.creator')
 
 class View(grok.View):
     grok.context(IPloneSiteRoot)
-    grok.name('newslettercreator-controlpanel')
     grok.require('cmf.ManagePortal')
-    
+    grok.name('newslettercreator-controlpanel')
+
     def __init__(self, *args, **kwargs):
         super(View, self).__init__(*args, **kwargs)
         self.context = aq_inner(self.context)
