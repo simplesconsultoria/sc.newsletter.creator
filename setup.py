@@ -11,9 +11,7 @@ setup(name='sc.newsletter.creator',
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
-        "Framework :: Plone",
-        "Framework :: Zope2",
-        "Framework :: Zope3",
+        "Framework :: Plone :: 4.1",
         "Programming Language :: Python",
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
@@ -28,6 +26,7 @@ setup(name='sc.newsletter.creator',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'Products.CMFPlone',
           'five.grok>=1.3.0',
           'plone.resource>=1.0b5',
       ],
