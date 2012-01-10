@@ -6,7 +6,7 @@ version = open(os.path.join("sc", "newsletter", "creator", "version.txt")).read(
 
 setup(name='sc.newsletter.creator',
       version=version,
-      description="",
+      description="Creates HTML for sending newsletter",
       long_description=open(os.path.join("sc", "newsletter", "creator", "README.txt")).read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
@@ -15,7 +15,7 @@ setup(name='sc.newsletter.creator',
         "Programming Language :: Python",
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
-      keywords='',
+      keywords='newsletter simples creator',
       author='Simples Consultoria',
       author_email='products@simplesconsultoria.com.br',
       url='http://www.simplesconsultoria.com.br/',
@@ -31,8 +31,6 @@ setup(name='sc.newsletter.creator',
           'plone.resource>=1.0b5',
       ],
       entry_points="""
-      # -*- Entry points: -*-
-
       [z3c.autoinclude.plugin]
       target = plone
       """,
