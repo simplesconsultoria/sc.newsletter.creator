@@ -4,7 +4,7 @@
     xmlns:i18n="http://xml.zope.org/namespaces/i18n"
     lang="en"
     metal:use-macro="context/prefs_main_template/macros/master"
-    i18n:domain="sc.base.newslettercreator">
+    i18n:domain="sc.newsletter.creator">
 
 <body>
 
@@ -26,7 +26,7 @@
     </p>
 
     <dl class="enableFormTabbing">
-        <dt id="fieldsetlegend-import">Import files</dt>
+        <dt id="fieldsetlegend-import" i18n:translate="label_newslettercreator_importfiles">Import files</dt>
         <dd id="fieldset-import">
 
             <p i18n:translate="description_import">
@@ -51,8 +51,7 @@
                     <div class="formHelp" i18n:translate="help_newslettercreator_archive">
                         Select a file to upload. This must be a Zip file with
                         a single top level directory, which will be used as
-                        the newsletter theme identifier. This directory must contain a
-                        <code>manifest.cfg</code>.
+                        the newsletter theme identifier.
                     </div>
 
                     <div tal:content="error" tal:condition="error" />

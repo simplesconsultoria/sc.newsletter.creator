@@ -7,20 +7,8 @@ sc.newsletter.creator
 Overview
 --------
 
-It was the dawn of the third age of mankind - ten years after the Earth-Minbari 
-War.
-
-The Babylon Project was a dream, given form. Its goal: to prevent another war, 
-by creating a place where humans and aliens can work out their differences 
-peacefully. It's a port of call - home away from home - for diplomats, hustlers, 
-entrepreneurs, and wanderers.
-
-Humans and aliens, wrapped in two million, five hundred thousand tons of 
-spinning metal . . . all alone in the night.
-
-It can be a dangerous place, but it's our last best hope for peace.
-
-This is the story of the last of the Babylon stations
+This products enables the user to generate a HTML code for their newsletter based
+on a template and with a specific theme, different from the site theme.
 
 Requirements
 ------------

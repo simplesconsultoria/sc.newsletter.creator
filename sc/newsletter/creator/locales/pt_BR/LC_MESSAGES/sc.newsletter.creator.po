@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2009-02-27 17:49+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"Last-Translator: Simples Consultoria <products@simplesconsultoria.com.br>\n"
+"POT-Creation-Date: 2012-01-10 19:56+0000\n"
+"PO-Revision-Date: 2012-01-10 17:55-0300\n"
+"Last-Translator: Gustavo Lepri <lepri@simplesconsultoria.com.br>\n"
 "Language-Team: Simples Consultoria <products@simplesconsultoria.com.br>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -13,4 +13,88 @@ msgstr ""
 "Language-Name: Brazilian Portuguese\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: sc.newsletter.creator\n"
+
+#: ../browser/controlpanel_templates/view.pt:91
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: ../browser/controlpanel.py:45
+msgid "Changes canceled."
+msgstr "Alterações canceladas."
+
+#: ../browser/controlpanel.py:86
+msgid "Changes saved"
+msgstr "Alterações salvas"
+
+#: ../browser/controlpanel_templates/view.pt:84
+msgid "Import"
+msgstr "Importar"
+
+#: ../profiles/default/actions.xml
+msgid "Newsletter Creator"
+msgstr "Newsletter Creator"
+
+#: ../profiles/default/controlpanel.xml
+msgid "Newsletter Creator Settings"
+msgstr "Configurações de Newsletter Creator"
+
+#: ../browser/controlpanel.py:88
+msgid "There were errors"
+msgstr "Existem erros"
+
+#. Default: "Use the form below to upload a Zip file containing a newsletter theme."
+#: ../browser/controlpanel_templates/view.pt:32
+msgid "description_import"
+msgstr "Use o formulário abaixo para enviar um arquivo Zip contendo um tema de newsletter."
+
+#. Default: "Use this control panel to configure a template for generate the newsletter HTML by upload a zip file containing the static HTML and images."
+#: ../browser/controlpanel_templates/view.pt:23
+msgid "description_newslettercreator_settings"
+msgstr "Use este painel de contorle para configurar um template que gerarará o HTML para a newsletter enviando um arquivo Zip contendo o HTML estático e as imagens."
+
+#. Default: "This newsletter theme is already installed. Select 'Replace existing newsletter theme' and re-upload to replace it."
+#: ../browser/controlpanel.py:73
+msgid "error_already_installed"
+msgstr "Este tema para a newsletter já está instalado. Selecione 'Substituir o tema existente' e reenvie para substituí-lo"
+
+#. Default: "The uploaded file is not a valid Zip archive"
+#: ../browser/controlpanel.py:62
+msgid "error_invalid_zip"
+msgstr "O arquivo enviado não é um arquivo Zip válido"
+
+#. Default: "Newsletter Creator settings"
+#: ../browser/controlpanel_templates/view.pt:13
+msgid "heading_newslettercreator_settings"
+msgstr "Configurações de Newsletter Creator"
+
+#. Default: "Select a file to upload. This must be a Zip file with a single top level directory, which will be used as the newsletter theme identifier."
+#: ../browser/controlpanel_templates/view.pt:51
+#, fuzzy
+msgid "help_newslettercreator_archive"
+msgstr "Selecione o arquivo para fazer upload. Eles deve ser um arquivo Zip com apenas um nível de diretório, que será usado como o identificador do tema da newsletter."
+
+#. Default: "Select this option to replace any existing theme that may have been uploaded previously."
+#: ../browser/controlpanel_templates/view.pt:77
+msgid "help_replace_existing"
+msgstr "Selecione esta opção para substituir qualquer tema existente que foi previamente enviado."
+
+#. Default: "Theme Newsletter archive"
+#: ../browser/controlpanel_templates/view.pt:49
+msgid "label_newslettercreator_archive"
+msgstr "Arquivo de tema da newsletter"
+
+#. Default: "Import files"
+#: ../browser/controlpanel_templates/view.pt:29
+msgid "label_newslettercreator_importfiles"
+msgstr "Importar arquivos"
+
+#. Default: "Replace existing theme"
+#: ../browser/controlpanel_templates/view.pt:76
+msgid "label_replace_existing"
+msgstr "Substituir o tema existente"
+
+#. Default: "Up to Site Setup"
+#: ../browser/controlpanel_templates/view.pt:16
+msgid "label_up_to_plone_setup"
+msgstr "Voltar para as Configurações do Site"
 

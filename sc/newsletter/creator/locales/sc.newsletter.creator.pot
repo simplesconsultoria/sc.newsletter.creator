@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2009-02-27 17:49+0000\n"
+"POT-Creation-Date: 2012-01-10 19:56+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,5 +12,88 @@ msgstr ""
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: sc.newsletter.creator\n"
+"Domain: DOMAIN\n"
+
+#: ../browser/controlpanel_templates/view.pt:91
+msgid "Cancel"
+msgstr ""
+
+#: ../browser/controlpanel.py:45
+msgid "Changes canceled."
+msgstr ""
+
+#: ../browser/controlpanel.py:86
+msgid "Changes saved"
+msgstr ""
+
+#: ../browser/controlpanel_templates/view.pt:84
+msgid "Import"
+msgstr ""
+
+#: ../profiles/default/actions.xml
+msgid "Newsletter Creator"
+msgstr ""
+
+#: ../profiles/default/controlpanel.xml
+msgid "Newsletter Creator Settings"
+msgstr ""
+
+#: ../browser/controlpanel.py:88
+msgid "There were errors"
+msgstr ""
+
+#. Default: "Use the form below to upload a Zip file containing a newsletter theme."
+#: ../browser/controlpanel_templates/view.pt:32
+msgid "description_import"
+msgstr ""
+
+#. Default: "Use this control panel to configure a template for generate the newsletter HTML by upload a zip file containing the static HTML and images."
+#: ../browser/controlpanel_templates/view.pt:23
+msgid "description_newslettercreator_settings"
+msgstr ""
+
+#. Default: "This newsletter theme is already installed. Select 'Replace existing newsletter theme' and re-upload to replace it."
+#: ../browser/controlpanel.py:73
+msgid "error_already_installed"
+msgstr ""
+
+#. Default: "The uploaded file is not a valid Zip archive"
+#: ../browser/controlpanel.py:62
+msgid "error_invalid_zip"
+msgstr ""
+
+#. Default: "Newsletter Creator settings"
+#: ../browser/controlpanel_templates/view.pt:13
+msgid "heading_newslettercreator_settings"
+msgstr ""
+
+#. Default: "Select a file to upload. This must be a Zip file with a single top level directory, which will be used as the newsletter theme identifier."
+#: ../browser/controlpanel_templates/view.pt:51
+msgid "help_newslettercreator_archive"
+msgstr ""
+
+#. Default: "Select this option to replace any existing theme that may have been uploaded previously."
+#: ../browser/controlpanel_templates/view.pt:77
+msgid "help_replace_existing"
+msgstr ""
+
+#. Default: "Theme Newsletter archive"
+#: ../browser/controlpanel_templates/view.pt:49
+msgid "label_newslettercreator_archive"
+msgstr ""
+
+#. Default: "Import files"
+#: ../browser/controlpanel_templates/view.pt:29
+msgid "label_newslettercreator_importfiles"
+msgstr ""
+
+#. Default: "Replace existing theme"
+#: ../browser/controlpanel_templates/view.pt:76
+msgid "label_replace_existing"
+msgstr ""
+
+#. Default: "Up to Site Setup"
+#: ../browser/controlpanel_templates/view.pt:16
+msgid "label_up_to_plone_setup"
+msgstr ""
 
